@@ -1,0 +1,409 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('img/light-black.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 20px;
+  transition: .5s;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  border-radius: 5px;
+  background-color: rgb(27, 59, 70);
+}
+
+
+
+
+
+
+*{
+  padding: 0;margin: 0;box-sizing: border-box;
+}
+
+.page{
+  width: 100wh;
+  height: fit-content;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+nav{
+  width: 100%;
+  /* overflow: hidden; */
+  /* border: 1px solid red; */
+ display: flex;
+ flex-wrap: wrap;
+ height: 14vh;
+}
+.logo{
+  margin: auto;
+  /* position: relative;
+  top: 10px; */
+  right: 60px;
+}
+.logo h2{
+  color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link{
+  padding: 10px;
+  margin: auto;
+  /* position: relative;
+  top: 10px; */
+  box-shadow: 0px 0px 13px rgb(255, 255, 255);
+  border-radius: 35px;
+  width: 45%;
+  text-align: center;
+}
+.link a{
+  font-weight: bold;
+  margin: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn_1 {
+  margin: auto;
+  /* position: relative;
+  top: 10px; */
+}
+.btn_1 button{
+  padding: 10px;
+  width: max-content;
+  cursor: pointer;
+  position: relative;
+  left: 60px;
+  font-family:monospace;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+}
+.btn_1 button:hover{
+  box-shadow: 0px 0px 15px rgb(15, 150, 150);
+  transition: 0s;
+  transition-duration: .8s;
+  background-color: transparent;
+  color: white;
+  border-radius: 100pt;
+
+}
+
+.link #nav_1:hover{
+  border-bottom: 1px solid yellow;
+  color: yellow;
+}
+
+.bd {
+width: 100vw;
+height: fit-content; 
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.right{
+width: 400px;
+height: fit-content;
+/* border: 1px solid white; */
+}
+
+.right h2{
+color: #f1f1f1;
+font-family: monospace;
+text-align: center;
+margin: 10px;
+}
+.right form{
+display: flex;
+flex-direction: column;
+width: 80%;
+margin: 4% 10%;
+/* border: 1px solid blue;  */
+}
+.right form input{
+color: #f1f1f1;
+font-weight: bold;
+background-color: transparent;
+padding: 10px;
+text-align: center;
+margin: 3% 0;
+border: none;
+box-shadow: 0px 0px 10px rgb(95, 85, 67);
+border-radius: 20px;
+}
+.right form .ic{
+display: flex;
+align-items: end;
+justify-content: end;
+
+}
+.right form a{
+
+text-decoration: none;
+color: #77c0e2;
+}
+
+.right form #auth{
+width: 50%;
+margin: 2% 25%;
+color: rgb(255, 254, 253);
+cursor:pointer;
+}
+.right form #auth:active{
+cursor: progress;
+}
+.right .h_row{
+width: 60%; 
+height: 1px;
+margin: 0% 20%;
+background-color: wheat;
+}
+form{
+width: 80%;
+
+}
+form #usr_id{
+outline: none;
+background-color: rgb(17, 11, 11);
+box-shadow: none;
+width: 80%;
+border-radius: 0;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+.right #usr_id:hover{
+box-shadow: 0px 0px 10px rgb(122, 100, 100);
+transition-duration: 1s;
+transition-delay: 0;
+}
+
+form #usr_sub{
+width: 20%;
+border-radius: 0;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+box-shadow: none;
+cursor: pointer;
+box-shadow: 1px 1px 5px rgb(54, 45, 45);
+}
+.right #port{
+display: flex;
+flex-direction: row;
+}
+
+.bd #top{
+  height: 20vh;
+}
+.top button{
+  visibility: hidden;
+}
+
+@media only screen and (max-width:900px) {
+  .page{
+    overflow:hidden ;
+  }
+  nav{
+    margin: auto;
+  }
+  nav .link{
+    min-width: max-content;
+  }
+  nav .btn_1{
+    visibility: hidden;
+  }
+  nav .logo{
+    visibility: hidden;
+  }
+  .right {
+    margin-top: 10vh;
+    /* height: max-content; */
+    /* box-shadow: 1px 1px 20px white; */
+    }
+    .bd #top button{
+      margin: 5vw 0;
+      visibility: visible;
+      width: fit-content;
+      padding: 5px 7px;
+      height: 10vh;
+      /* border: 2px solid wheat; */
+    }
+
+@media only screen and (max-width:700px) {
+.btn_1{
+  visibility: hidden;
+}
+nav{
+  width: fit-content; 
+  display: block;
+  /* position: relative; */
+  
+  height: 18vh;
+}
+.logo{
+ display: contents;
+}
+.link a{
+  padding: 0;
+}
+.logo h2{
+  text-align: center;
+}
+.link{
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+}
+
+  .bd #top{
+    visibility: visible;
+    width: 20vh;
+    height: fit-content;
+    /* border: 2px solid wheat; */
+  }
+
+@media only screen and (max-width:460px){
+  .page{
+    overflow: hidden;
+  }
+  nav{
+  width: 100vw; 
+  display: block;
+  /* position: relative;
+  top: 4px; */
+  height: 18vh;
+}
+.logo{
+  visibility: hidden;
+}
+.link a{
+  padding: 0;
+}
+.logo h2{
+  text-align: center;
+}
+.link{
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+}
+.btn_1{
+  visibility: hidden;
+}
+.dropdown-content a {
+ padding: 7px 7px;
+}
+
+.bd{
+  /* background-color: wheat; */
+  height: fit-content;
+  width: 100%;
+  overflow: hidden;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bd .right{
+  width: 100%;
+}
+
+.bd #down{
+  height: max-content;
+  width: 80vw;
+  /* height: fit-content; */
+  border: 2px black;
+  /* background-color: red; */
+}
+#pp{
+  position: absolute;
+  text-align: center;
+  top: 16%;
+  left: 30%;
+}
+#port{
+  position: absolute;
+  top: 20%;
+  left: 10px;
+  background-color: rgb(53, 34, 34);
+}
+#port #usr_sub{
+  box-shadow: 1px 1px 2px black;
+}
+.right form input{
+  margin: 5% 0;
+}
+.right form #auth{
+  margin-top: 4%;
+}
+}
+.bd #top{
+visibility: visible;
+width: 150px;
+height: 50px;
+border: 1px solid white;
+}
+.top button{
+background-color: wheat;
+padding: 10px;
+
+}
+}
+
+.bd #top{
+visibility: hidden;
+}
+}

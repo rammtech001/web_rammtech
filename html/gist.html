@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/java.js"></script>
+    <title>Mentor Selection</title>
+    <style>
+        *{
+            text-decoration: none;
+            text-align: center;
+        }
+        nav{
+            width: 95vw;
+            margin: auto;
+            padding: 10px;
+        }
+        nav .link{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav .link button{
+            padding: 10px;
+        }
+        .p1{
+            width: 100vw;
+            margin: 5% 0;
+        }
+        .box{
+            width: 400px;
+            margin: auto;
+        }
+        form{
+            margin: auto;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+        form input,select{
+            margin: 5px 0;
+            padding: 5px;
+            width: 295px;
+        }
+        form .boo{
+            display: flex;
+            justify-content: space-evenly;
+            width: 300px;
+        }
+        form .boo input{
+            width: 100px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="p">
+            <nav>
+                <div class="link">
+                    <button><a href="/index.html">Home</a></button>
+                    <button><a href="#">Info</a></button>
+                </div>
+            </nav>
+            <div class="p1">
+                <div class="box">
+                    <form>
+                        <select id="Mentor">
+                            <option value="-1">Select Mentor</option>
+                            <option value="Ramesh">A Ramesh</option>
+                        </select>
+                        <input type="text" name="" placeholder="Enter User Name" id="usr">
+                        <input type="password" placeholder="Enter Password" name="" id="pswd">
+                        <div class="boo">
+                            <input type="submit" value="Submit" name="" id="" onclick="Mentor_log()">
+                            <input type="reset" value="Reset" name="" id="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/java.js"></script>
+</body>
+</html>
