@@ -1,7 +1,7 @@
 body{
   width: 100vw;
   height: 100vh;
-  background-image: url('img/light-black.jpg');
+  /* background-image: url('img/light-black.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,7 +10,7 @@ body{
 /* Style The Dropdown Button */
 .dropbtn {
   background-color: transparent;
-  color: white;
+  color: black;
   padding: 10px;
   font-size: 16px;
   border: none;
@@ -108,7 +108,7 @@ nav{
   margin: 10px;
   text-decoration: none;
   background-color: transparent;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px;
   font-size: 16px;
   border: none;
